@@ -452,15 +452,20 @@
 
         function sendRequestForRoomba() {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("GET", "http://openport.io:40896/roomba", true);
+            xhttp.open("GET", "https://openport.io:40896/roomba", true);
             xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            //xhttp.send("cups=2&strength=3&grinder=1&minutes=15");
+            if(xhttp.readyState==4)
+                alert("status " + xhttp.status);
             xhttp.send();
         }
 
         function sendRequestForCoffee() {
             var xhttp = new XMLHttpRequest();
+<<<<<<< HEAD
             xhttp.open("POST", " https://3cc27cc9.ngrok.io/post", true);
+=======
+            xhttp.open("POST", "https://openport.io:40896/post", true);
+>>>>>>> fec9d20c360ff2a627f783c3f4cee68b0712645c
             xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             xhttp.send("cups=2&strength=3&grinder=1&minutes=15");
             //xhttp.send();
