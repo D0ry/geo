@@ -9,7 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
+    <!--
     <link rel="stylesheet" href="style.css">
+    -->
 
 
     <style>
@@ -460,7 +462,7 @@
 
         function sendRequestForCoffee() {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", " https://3cc27cc9.ngrok.io/post", true);
+            xhttp.open("POST", "http://openport.io:40896/post", true);
             xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             xhttp.send("cups=2&strength=3&grinder=1&minutes=15");
             //xhttp.send();
