@@ -462,7 +462,7 @@
 
         function sendRequestForCoffee() {
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", "https://3cc27cc9.ngrok.io/post", true);
+            xhttp.open("POST", "http://openport.io:40896/post", true);
             xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             xhttp.send("cups=2&strength=3&grinder=1&minutes=15");
             //xhttp.send();
